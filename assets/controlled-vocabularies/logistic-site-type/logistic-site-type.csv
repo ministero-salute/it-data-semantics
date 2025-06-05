@@ -1,0 +1,8 @@
+﻿codice_1_liv,label_1_liv,codice_2_liv,label_2_liv
+c,Esercizio commerciale,c.c1,Esercizio di vicinato
+c,Esercizio commerciale,c.c2,Media struttura di vendita
+c,Esercizio commerciale,c.c3,Grande struttura di vendita
+d,Depositario,d.d,Depositario
+g,Grossista,g.d,Grossista e Depositario
+p,Produttore,p.p,Produttore
+s,Smaltimento,s.s,Smaltimento
