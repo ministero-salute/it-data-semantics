@@ -1,0 +1,1217 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/italia/health/onto/health-organisation/"
+     xml:base="https://w3id.org/italia/health/onto/health-organisation/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:ti="https://w3id.org/italia/onto/TI/"
+     xmlns:clv="https://w3id.org/italia/onto/CLV/"
+     xmlns:cov="https://w3id.org/italia/onto/COV/"
+     xmlns:cpv="https://w3id.org/italia/onto/CPV/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:poi="https://w3id.org/italia/onto/POI/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:admsapit="https://w3id.org/italia/onto/ADMS/">
+    <owl:Ontology rdf:about="https://w3id.org/italia/health/onto/health-organisation">
+        <owl:versionIRI rdf:resource="https://w3id.org/italia/health/onto/health-organisation/0.1"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/COV"/>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/health/data/private-organisation/13454210157"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/health/data/private-organisation/13866741005"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/health/data/public-organization/m_sa"/>
+        <dct:description xml:lang="it">Questa ontologia consente di rappresentare dati relativi all&apos;anagrafica di diverse tipologie di organizzazioni che operano nel settore sanitario, anche territoriale. L&apos;ontologia  estende l&apos;ontologia nazionale sulle organizzazioni per specializzare la modellazione di organizzazioni quali case di cura, strutture sanitarie equiparate pubbliche e private, farmacie, parafarmacie, siti logistici per la distribuzioni dei farmaci, strutture residenziali. Per alcune strutture, l&apos;ontologia consente anche di rappresentare dati relativi al personale sanitario presente.</dct:description>
+        <dct:description xml:lang="en">This ontology enables the representation of master data of different types of organisations operating in the health sector, even at the territorial level. The ontology extends the national organisation ontology in order to specialise the modelling of organisations such as nursing homes, public and private equivalent healthcare facilities, pharmacies, parapharmacies, and logistics sites for drug distribution, residential facilities. For some facilities, the ontology also makes it possible to represent data on the healthcare personnel available</dct:description>
+        <dct:identifier>https://w3id.org/italia/health/onto/health-organisation</dct:identifier>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-02-19</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ENG"/>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-03-19</dct:modified>
+        <dct:publisher rdf:resource="https://w3id.org/italia/health/data/public-organization/m_sa"/>
+        <dct:rightsHolder rdf:resource="https://w3id.org/italia/health/data/public-organization/m_sa"/>
+        <dct:title xml:lang="en">Health Organisations Ontology</dct:title>
+        <dct:title xml:lang="it">Ontologia delle organizzazioni sanitarie</dct:title>
+        <rdfs:comment xml:lang="it">Questa ontologia consente di rappresentare dati relativi all&apos;anagrafica di diverse tipologie di organizzazioni che operano nel settore sanitario. L&apos;ontologia  estende l&apos;ontologia nazionale sulle organizzazioni per specializzare la modellazione di organizzazioni quali case di cura, strutture sanitarie equiparate pubbliche e private, farmacie, parafarmacie, siti logistici per la distribuzioni dei farmaci. Per alcune strutture, l&apos;ontologia consente anche di rappresentare dati relativi al personale sanitario presente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This ontology enables the representation of master data of different types of organisations operating in the health sector. The ontology extends the national organisation ontology in order to specialise the modelling of organisations such as nursing homes, public and private equivalent healthcare facilities, pharmacies, parapharmacies, and logistics sites for drug distribution. For some facilities, the ontology also makes it possible to represent data on the healthcare personnel available</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Health Organisations Ontology</rdfs:label>
+        <rdfs:label xml:lang="it">Ontologia delle organizzazioni sanitarie</rdfs:label>
+        <owl:versionInfo xml:lang="en">Version 0.1 - creation of the ontology</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.1 - creazione dell&apos;ontologia</owl:versionInfo>
+        <dcat:contactPoint rdf:resource="https://w3id.org/italia/health/data/contact-point/m_sa"/>
+        <dcat:keyword xml:lang="it">aziende sanitarie locali</dcat:keyword>
+        <dcat:keyword xml:lang="it">case di cura</dcat:keyword>
+        <dcat:keyword xml:lang="it">farmacie</dcat:keyword>
+        <dcat:keyword xml:lang="it">ospedali</dcat:keyword>
+        <dcat:keyword xml:lang="it">parafarmacie</dcat:keyword>
+        <dcat:keyword xml:lang="it">siti logistici</dcat:keyword>
+        <dcat:keyword xml:lang="it">strutture di ricovero</dcat:keyword>
+        <dcat:theme rdf:resource="http://publications.europa.eu/resource/authority/data-theme/HEAL"/>
+        <admsapit:acronym>HO</admsapit:acronym>
+        <admsapit:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthOrganisation"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareAuthority"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/health/onto/health-organisation/NursuringHome"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/health/onto/health-organisation/PharmaceuticalOrganisation"/>
+        <admsapit:hasKeyClass rdf:resource="https://w3id.org/italia/health/onto/health-organization/InpatientFacility"/>
+        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/health/data/distribution/HO-RDF-TURTLE"/>
+        <admsapit:hasSemanticAssetDistribution rdf:resource="https://w3id.org/italia/health/data/distribution/HO-RDF-XML"/>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/AnnotationTask"/>
+        <admsapit:hasTask rdf:resource="https://w3id.org/italia/onto/ADMS/QueryFormulationTask"/>
+        <admsapit:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/italia/health/onto/health-organisation</admsapit:officialURI>
+        <admsapit:prefix>ho</admsapit:prefix>
+        <admsapit:status>draft</admsapit:status>
+        <admsapit:target xml:lang="it">Cittadini</admsapit:target>
+        <admsapit:target xml:lang="it">Imprese</admsapit:target>
+        <admsapit:target xml:lang="it">Pubbliche Amministrazioni</admsapit:target>
+        <admsapit:type rdf:resource="https://w3id.org/italia/onto/ADMS/DomainOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#fn -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#fn"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#accessURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#accessURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#downloadURL -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#downloadURL"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#theme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#theme"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasKeyClass -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasKeyClass"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasTask -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasTask"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/target -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/type -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/type"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/controlledVocabulary -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/l0/controlledVocabulary"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/associatedWithCommercialActivityType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/associatedWithCommercialActivityType">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/LogisticSiteCompany"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/health/onto/health-organisation/CommercialActivityType"/>
+        <rdfs:comment xml:lang="it">La proprietà che consente di associare l&apos;azienda di siti logistici alla tipologia di esercizio commerciale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that enables the company of logistics sites to be associated with the type of business.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">associated with commercial activity type</rdfs:label>
+        <rdfs:label xml:lang="it">associato con tipo attività commerciale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/hasActivityValidity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/hasActivityValidity">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/PharmaceuticalOrganisation"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:comment xml:lang="it">La proprietà che consente di indicare il periodo entro il quale è possibile svolgere le attività previste per un&apos;organizzazione farmaceutica di diverso tipo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that allows one to indicate the period within which it is possible to carry out the activities envisaged for a pharmaceutical organisation of a different type.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">ha validità dell&apos;attività</rdfs:label>
+        <rdfs:label xml:lang="en">has activity validity</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/hasHealthcareFacilityType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/hasHealthcareFacilityType">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacilityType"/>
+        <rdfs:comment xml:lang="it">La relazione che permette di definire il tipo di struttura sanitaria (es: ente universitario, IRCC)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The relation asserts the types of healthcare facitity that can be academic institution, IRCC, etc..</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">ha tipo di struttura sanitaria</rdfs:label>
+        <rdfs:label xml:lang="en">has healthcare facility type</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/hasMembership -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/hasMembership">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/InpatientFacility"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/health/onto/health-organisation/Membership"/>
+        <rdfs:comment xml:lang="it">La proprietà che consente di rappresentare il personale membro di una struttura di ricovero.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that enables the representation of the staff members of an inpatient facility.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">ha affiliazione</rdfs:label>
+        <rdfs:label xml:lang="en">has membership</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/hasPersonnelMember -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/hasPersonnelMember">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/Membership"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/health/onto/health-organisation/Personnel"/>
+        <rdfs:comment xml:lang="en">Property that allows one to specify the personnel belonging to the inpatient facility</rdfs:comment>
+        <rdfs:comment xml:lang="it">Proprietà che consente di specificare il personale appartenente alla struttura di ricovero</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">ha membro personale</rdfs:label>
+        <rdfs:label xml:lang="en">has personnel member</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/hasPharmacyType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/hasPharmacyType">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/Pharmacy"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/health/onto/health-organisation/PharmacyType"/>
+        <rdfs:comment xml:lang="it">La proprietà che consente di specificare per una farmacia il suo tipo (ordinaria, succursale, dispensario, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that allows one to specify for a pharmacy its type (ordinary, branch, dispensary, etc.).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">ha tipo farmacia</rdfs:label>
+        <rdfs:label xml:lang="en">has farmacy type</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/hasResponsibilityOn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/hasResponsibilityOn">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CLV/Feature"/>
+        <rdfs:comment xml:lang="it">La proprietà per collegare un&apos;ASL al territorio di sua competenza.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that allows one to represent the type of healthcare assistance is provided by a facility.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">ha responsabilità territoriale su</rdfs:label>
+        <rdfs:label xml:lang="en">has responsibility on</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/isLocatedInPlaceGovernedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/isLocatedInPlaceGovernedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareAuthority"/>
+        <rdfs:comment xml:lang="it">La proprietà che consente di collegare una struttura sanitaria all&apos;ASL di competenza territoriale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that enables a health facility to be linked to the relevant territorial ASL.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">is located in place governed by</rdfs:label>
+        <rdfs:label xml:lang="it">è localizzata in territorio governato da</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/isOfSex -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/isOfSex">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/Personnel"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/CPV/Sex"/>
+        <rdfs:comment xml:lang="it">La proprietà utilizzata per indicare il sesso del personale appartenente a una struttura di ricovero.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property used to indicate the sex of the staff of an inpatient facility</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">is of sex</rdfs:label>
+        <rdfs:label xml:lang="it">è di sesso</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/isRightsHolderOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/isRightsHolderOf">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/LogisticSiteCompany"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/health/onto/health-organisation/LogisticSite"/>
+        <rdfs:comment xml:lang="it">La proprietà per collegare l&apos;azienda proprietaria al relativo sito logistico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property to connect the owner company to its logistics site.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">is rights holder of</rdfs:label>
+        <rdfs:label xml:lang="it">è proprietario di</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/providesHealthcareAssistance -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/providesHealthcareAssistance">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareAssistanceType"/>
+        <rdfs:comment xml:lang="it">La proprietà che consente di rappresentare la tipologia di assistenza sanitaria erogata da una struttura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The property that allows one to represent the type of healthcare assistance is provided by a facility.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">eroga assistenza sanitaria</rdfs:label>
+        <rdfs:label xml:lang="en">provides healthcare assistance</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/plannedBedCapacity -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/plannedBedCapacity">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/InpatientFacility"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">Il numero di posti letto massimo disponibili in una struttura di ricovero.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The maximum number of beds in an inpatient facility.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">planned bed capacity</rdfs:label>
+        <rdfs:label xml:lang="it">posti letto disponibili</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/totalFemalePersonnel -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/totalFemalePersonnel">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/Membership"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">Numero totale di personale di sesso femminile appartenente a una struttura di ricovero.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Total number of female staff in an inpatient facility.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">total female personnel</rdfs:label>
+        <rdfs:label xml:lang="it">totale personale femminile</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/totalMalePersonnel -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/totalMalePersonnel">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/Membership"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">Numero totale di personale di sesso maschile appartenente a una struttura di ricovero.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Total number of male staff in an inpatient facility.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">total male personnel</rdfs:label>
+        <rdfs:label xml:lang="it">totale personale maschile</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/totalPersonnel -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/italia/health/onto/health-organisation/totalPersonnel">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/health/onto/health-organisation/Membership"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">Numero totale di persone che rappresentano il personale di una struttura di ricovero.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Total number of persons representing the staff of an inpatient facility.</rdfs:comment>
+        <rdfs:comment xml:lang="en">to be added</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">personale totale</rdfs:label>
+        <rdfs:label xml:lang="en">total personnel</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dati.gov.it/onto/dcatapit#Agent -->
+
+    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Agent"/>
+    
+
+
+    <!-- http://dati.gov.it/onto/dcatapit#Organization -->
+
+    <owl:Class rdf:about="http://dati.gov.it/onto/dcatapit#Organization"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Kind -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Kind"/>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/AccreditatedPrivateInpatientFacility -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/AccreditatedPrivateInpatientFacility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/InpatientFacility"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta le strutture sanitarie di ricovero private che hanno ottenuto l&apos;accreditamento istituzionale per il Servizio Sanitario Nazionale (SSN).</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents private in-patient healthcare facilities that have obtained institutional accreditation for the National Health Service.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Accreditated Private Inpatient Facility</rdfs:label>
+        <rdfs:label xml:lang="it">Strutture di Ricovero Private Accreditate</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/CommercialActivityType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/CommercialActivityType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:comment xml:lang="it">La tipologia di attività commerciale. Ci sono tre tipologie: esercizi di vicinato, medie strutture di vendita e grandi strutture di vendita.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The typology of commercial activity. There are three types: neighbourhood establishments, medium-sized establishments and large establishments.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Commercial Activity Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo Attività Commerciale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/CommercialEstablishment -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/CommercialEstablishment">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/PharmaceuticalOrganisation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/POI/PointOfInterest"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;entità commerciale che opera nel settore farmaceutico, specializzata nella vendita al dettaglio di farmaci e/o prodotti parafarmaceutici.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a commercial entity operating in the pharmaceutical sector, specialised in the retail sale of pharmaceuticals and/or parapharmaceuticals.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Commercial Establishment</rdfs:label>
+        <rdfs:label xml:lang="it">Esercizio Commerciale Farmaci</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/DayCareFacility -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/DayCareFacility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta una struttura sanitaria semiresidenziale come un &apos;Centro Diurno&apos;.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a healthcare facility such as a semi-residential facility.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Day Care Facility</rdfs:label>
+        <rdfs:label xml:lang="en">Semi-residential Facility</rdfs:label>
+        <rdfs:label xml:lang="it">Struttura semiresidenziale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/HealthOrganisation -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/HealthOrganisation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta una generica organizzazione che opera nell&apos;ambito sanitario.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a generic organisation operating in the health sector.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Health Organisation</rdfs:label>
+        <rdfs:label xml:lang="it">Organizzazione Sanitaria</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/HealthcareAssistanceType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/HealthcareAssistanceType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:comment xml:lang="it">La tipologia di assistenza sanitaria erogata da una struttura sanitaria. Esempi includono: attività clinica, assistenza termale, assistenza agli anziani, assistenza per emergenze sanitarie, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The typology of healthcare assistance provided by a health facility. Examples include: clinical care, spa care, care for the elderly, care for medical emergencies, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Healthcare Assistance Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Assistenza Sanitaria</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/health/controlled-vocabulary/healthcare-assistance-types"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/HealthcareAuthority -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/HealthcareAuthority">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthOrganisation"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/health/onto/health-organisation/PharmaceuticalOrganisation"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta le specifiche aziende sanitarie con personalità giuridica pubblica e autonomia imprenditoriale. Può assumere varie denominazioni, tra cui A.S.L., U.T.S., A.S.P.,  A.O., A.O.U., A.T.S. dipendentemente dal territorio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the specific health agencies with public legal personality and entrepreneurial autonomy. It may take various names, including A.S.L., U.T.S., A.S.P., A.O., A.O.U., A.T.S. depending on the territory.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Autorità Sanitaria</rdfs:label>
+        <rdfs:label xml:lang="en">Healthcare Authority</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthOrganisation"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta una struttura sanitaria in generale. È una classe astratta funzionale alla modellazione dei dati; consente di raggruppare diverse tipologie di strutture sanitarie così come rappresentate nei dati del Ministero della Salute.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a healthcare facility in general. It is an abstract class functional for data modelling; it allows the grouping of different types of health facilities as represented in the Ministry of Health&apos;s data.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Healthcare Facility</rdfs:label>
+        <rdfs:label xml:lang="it">Struttura Sanitaria</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/HealthcareFacilityType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacilityType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:comment xml:lang="it">La tipologia delle varie  strutture sanitarie esistenti, anche nel contesto territoriale. Esempi includono, RSA per anziani, RSA per disabili fisici, RSA per disabili psichici, Day hospital, laboratorio, strutture di ricovero, case di cura, ecc.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The typology of the various existing healthcare facilities, also in the territorial context. Examples include, RSAs for the elderly, RSAs for the physically disabled, RSAs for the mentally disabled, day hospitals, laboratories, in-patient facilities, nursing homes, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Healthcare Facility Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Struttura Sanitaria</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-types"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/InpatientFacility -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/InpatientFacility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/health/onto/health-organisation/OutpatientFacility"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta le singole strutture ospedaliere di ricovero e trattamento come stabilito dal d.lgs. 502/92 e successive modifiche. Si intendono le strutture presso le quali vengono elargite le prestazioni sanitarie.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents individual hospital in-patient and treatment facilities as established by the Italian Legislative Decree 502/92 and subsequent amendments. It refers to the facilities at which health services are provided.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Inpatient Facility</rdfs:label>
+        <rdfs:label xml:lang="it">Struttura di Ricovero</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/LogisticSite -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/LogisticSite">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il sito (luogo) specifico all&apos;interno della catena di tracciabilità del farmaco. Ogni sito si occupa della registrazione e tracciabilità dei farmaci. Può includere stabilimenti di produzione, stoccaggio e distribuzione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the specific site (location) within the drug traceability chain. Each site deals with the registration and traceability of drugs. It may include production, storage and distribution facilities.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Logistic Site</rdfs:label>
+        <rdfs:label xml:lang="it">Sito Logistico (per Distribuzione Farmaci)</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/LogisticSiteCompany -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/LogisticSiteCompany">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/PharmaceuticalOrganisation"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il soggetto giuridico (organizzazione) che detiene i diritti, è titolare o gestisce un sito logistico di tracciabilità del farmaco.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the legal entity (private organisation) that holds the rights, owns or operates a logistic site for tracking the drug.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Azienda di Siti Logistici Distribuzione Farmaci</rdfs:label>
+        <rdfs:label xml:lang="en">Logistic Site Company</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/LogisticSiteType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/LogisticSiteType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:comment xml:lang="it">La tipologia di siti logistici. In particolare, sono previsti i seguenti tipi:
+P - il sito logistico ha almeno un’autorizzazione alla produzione, indipendentemente da altre autorizzazioni alla distribuzione possedute.
+D - il sito logistico ha una o più autorizzazioni alla distribuzione.
+G -  il sito logistico ha una o più autorizzazioni alla distribuzione all’ingrosso. Svolge attività di Grossista.
+C -  il sito logistico è un esercizio commerciale (parafarmacia) che effettua la vendita di medicinali ai sensi del d.l.223/2006
+S - il sito logistico è autorizzato allo smaltimento dei medicinali.
+
+Gli individui di questa classe sono concetti di uno specifico vocabolario controllato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The typology of logistical sites. In particular, the following types are envisaged:
+P - the logistics site has at least one production authorisation, regardless of any other distribution authorisations held.
+D - the logistics site has one or more distribution authorisations.
+G - the logistics site has one or more wholesale distribution authorisations. It carries out wholesale activities.
+C - the logistics site is a commercial establishment (parapharmacy) which carries out the sale of medicines within the meaning of d.l.223/2006
+S - the logistics site is authorised to dispose of medicinal products.
+
+Individuals in this class are concepts of a specific controlled vocabulary.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Logistic Site Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipologia Sito Logistico</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/health/controlled-vocabilary/logistic-site-types"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/Membership -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/Membership">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/RO/TimeIndexedRole"/>
+        <rdfs:comment xml:lang="it">La classe rappresenta una situazione (o reificazione in gerco tecnico) di appartenenza di persone, i.e., il personale, con un certo ruolo a una struttura di ricovero.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The class represents a situation in which people, i.e. staff, with a certain role belong to a health facility.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Appartenenza</rdfs:label>
+        <rdfs:label xml:lang="en">Membership</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/NursingHome -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/NursingHome">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/InpatientFacility"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/PrivateOrganization"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/health/onto/health-organisation/PublicOrPublicEquatedInpatientFacility"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta le case di cura ossia una struttura sanitaria di ricovero per persone anziane che siano almeno parzialmente autosufficienti e affetti da patologie acute o gravi da richiedere l’assistenza di personale sanitario specializzato Tipicamente strutture private che possono essere accreditate o meno al Sistema Sanitario Nazionale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents nursing homes, i.e. health care facilities for the elderly who are at least partially self-sufficient and suffering from acute or serious illnesses requiring the assistance of specialised health care personnel Typically private facilities that may or may not be accredited to the National Health System.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Casa di Cura</rdfs:label>
+        <rdfs:label xml:lang="en">Nursiring Home</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/OutpatientFacility -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/OutpatientFacility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta una struttura sanitaria come un ambulatorio o clinica ambulatoriale. Essi offrono un&apos;ampia gamma di servizi di cura, esami diagnostici e interventi chirurgici minori. La struttura è destinata al trattamento di persone con problemi di salute che non necessitano di un letto o di un ricovero per la notte.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a healthcare facility such as an outpatient or ambulatory clinic. They offer a wide range of treatment services, diagnostic examinations and minor surgery. The facility is intended for the treatment of persons with health problems who do not require a bed or overnight accommodation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Outpatient Facility</rdfs:label>
+        <rdfs:label xml:lang="it">Struttura Ambulatoriale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/Parapharmacy -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/Parapharmacy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/CommercialEstablishment"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/italia/health/onto/health-organisation/Pharmacy"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta le parafarmacie. Esse sono esercizi commerciali che vendono farmaci da banco (OTC) e altri prodotti per la salute e il benessere, ma non farmaci con obbligo di prescrizione medica. Possono essere esercizi di vicinato, medie strutture di vendita o grandi strutture di vendita</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents parapharmacies. They are retail establishments that sell over-the-counter medicines and other health and wellness products, but not prescription medicines. They may be retail establishments, medium-sized establishments or large establishments</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Parafarmacia</rdfs:label>
+        <rdfs:label xml:lang="en">Parapharmacy</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/Personnel -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/Personnel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/Group"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un gruppo di soggetti che, a vario titolo, prestano servizio all&apos;interno di un&apos;organizzazione. Nell&apos;ambito di questa ontologia, si intende all&apos;interno di una struttura di ricovero.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a group of individuals who, in various capacities, serve within an organisation. In the context of this ontology, this is understood to mean within an inpatient facility.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Personale</rdfs:label>
+        <rdfs:label xml:lang="en">Personnel</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/PharmaceuticalOrganisation -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/PharmaceuticalOrganisation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthOrganisation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/PrivateOrganization"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un&apos;organizzazione che opera nel settore dei farmaci. È una classe astratta utilizzata per supportare e implementare pattern di modellazione. Ci si aspetta pertanto che una delle sue sottoclassi saranno quelle istanziate nei dati di interesse.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents an organisation operating in the pharmaceutical sector. It is an abstract class used to support and implement modelling patterns. It is therefore expected that one of its subclasses will be the one instantiated in the data of interest.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Organizzazione Farmaceutica</rdfs:label>
+        <rdfs:label xml:lang="en">Pharmaceutical Organisation</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/Pharmacy -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/Pharmacy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/CommercialEstablishment"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/LogisticSiteCompany"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta le strutture che agiscono come erogatori per il canale della distribuzione in regime di convenzione e in distribuzione diretta (per i medicinali a uso umano) e come erogatori di farmaci a uso veterinario.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents establishments acting as dispensers for the convention and direct distribution channel (for medicines for human use) and as dispensers of medicines for veterinary use.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Farmacia</rdfs:label>
+        <rdfs:label xml:lang="en">Pharmacy</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/PharmacyType -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/PharmacyType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Concept"/>
+        <rdfs:comment xml:lang="en">A specific type of pharmacy. A pharmacy can be: 1- ordinary, 2- branch, 3-dispensary, 4- seasonal dispensary.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Uno specifico tipo di farmacia. Una farmacia può essere: 1- ordinaria, 2- succursale, 3-dispensario, 4- dispensario stagionale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Pharmacy Type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipo di Farmacia</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+        <l0:controlledVocabulary rdf:resource="https://w3id.org/italia/health/controlled-vocabulary/pharmacy-types"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/PublicOrPublicEquatedInpatientFacility -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/PublicOrPublicEquatedInpatientFacility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/InpatientFacility"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta le strutture sanitarie di ricovero che offrono prestazioni Sanitarie, gestite direttamente da enti pubblici oppure equiparate alle strutture a diretto controllo pubblico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents healthcare in-patient facilities that offer healthcare services, either managed directly by public bodies or equated with facilities under direct public control.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Public or Public Equated Inpatient Facility</rdfs:label>
+        <rdfs:label xml:lang="it">Strutture di Ricovero Pubbliche o Pubbliche Equiparate</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/ResidentialFacility -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/health/onto/health-organisation/ResidentialFacility">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/health/onto/health-organisation/HealthcareFacility"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta quelle strutture sanitarie non necessariamente ospedaliere che ospitano comunque per un periodo variabile persone non autosufficienti, ovvero persone che non possono essere assistite in casa e che necessitano di specifiche cure mediche di più specialisti e di un&apos;articolata assistenza sanitaria. Queste strutture possono essere pubbliche (del Comune o della ASL), private convenzionate col Sistema Sanitario Nazionale (SSN) o completamente private.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents those healthcare facilities that are not necessarily hospitals and that  accommodat,e for a variable time period, non-self-sufficient people, that is, persons who cannot be cared for at home and who require specific medical care by several specialists and articulated healthcare assistance. These facilities may be public (of the municipality or ASL), private affiliated with the National Health System (SSN) or completely private.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="en">Residential Facility</rdfs:label>
+        <rdfs:label xml:lang="it">Struttura Sanitaria Residenziale</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/Project -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/Project"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/SemanticAsset -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Address -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Address"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CLV/Feature -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CLV/Feature"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/COV/Group -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Group"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/COV/Organization -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/COV/PrivateOrganization -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/PrivateOrganization"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/CPV/Sex -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/CPV/Sex"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/POI/PointOfInterest -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/POI/PointOfInterest"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/RO/TimeIndexedRole -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/RO/TimeIndexedRole"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeInterval -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Characteristic -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Characteristic"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Concept -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Concept"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Location"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/italia/health/data/contact-point/m_sa -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/health/data/contact-point/m_sa">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Organization"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Kind"/>
+        <rdf:type rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <vcard:fn>Ex Direzione generale della digitalizzazione, del sistema informativo sanitario e della statistica</vcard:fn>
+        <vcard:hasEmail rdf:resource="mailto:direzionesistemainformativo@sanita.it"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/health/data/distribution/HO-RDF-TURTLE -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/health/data/distribution/HO-RDF-TURTLE">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/Turtle dell&apos;ontologia delle organizzazioni sanitarie</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/turtle of the health organisations ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione RDF/Turtle ontologia Organizzazioni Sanitarie</dct:title>
+        <dct:title xml:lang="en">RDF/Turtle distribution of Health Organisations Ontology</dct:title>
+        <dcat:accessURL rdf:resource="https://github.com/ministero-salute/it-data-semantics/tree/main/assets/ontologies/health-organisation/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ministero-salute/it-data-semantics/refs/heads/main/assets/ontologies/health-organisation/latest/health-organisation.ttl"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/health/data/distribution/HO-RDF-XML -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/health/data/distribution/HO-RDF-XML">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAssetDistribution"/>
+        <dct:description xml:lang="it">Questa è la distribuzione RDF/XML dell&apos;ontologia delle organizzazioni sanitarie</dct:description>
+        <dct:description xml:lang="en">This is the distribution in RDF/XML of the health organisations ontology</dct:description>
+        <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF_XML"/>
+        <dct:license rdf:resource="https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"/>
+        <dct:title xml:lang="it">Distribuzione RDF/XML ontologia Organizzazioni Sanitarie</dct:title>
+        <dct:title xml:lang="en">RDF/XML distribution of Health Organisations Ontology</dct:title>
+        <dcat:accessURL rdf:resource="https://github.com/ministero-salute/it-data-semantics/tree/main/assets/ontologies/health-organisation/latest"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/ministero-salute/it-data-semantics/refs/heads/main/assets/ontologies/health-organisation/latest/health-organisation.rdf"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/health/data/private-organisation/13454210157 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/health/data/private-organisation/13454210157">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>13454210157</dct:identifier>
+        <foaf:name xml:lang="it">Accenture Italia</foaf:name>
+        <foaf:name xml:lang="en">Accenture Italy</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/health/data/private-organisation/13866741005 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/health/data/private-organisation/13866741005">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>13866741005</dct:identifier>
+        <foaf:name xml:lang="en">BUP</foaf:name>
+        <foaf:name xml:lang="it">BUP srl</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/health/data/public-organization/m_sa -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/health/data/public-organization/m_sa">
+        <rdf:type rdf:resource="http://dati.gov.it/onto/dcatapit#Agent"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <dct:identifier>m_sa</dct:identifier>
+        <foaf:name xml:lang="it">Ministero della Salute</foaf:name>
+        <foaf:name xml:lang="en">Ministry of Health of Italy</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/health/onto/health-organisation">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/ADMS/SemanticAsset"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/LargeEstablishment -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/health/onto/health-organisation/LargeEstablishment">
+        <rdf:type rdf:resource="https://w3id.org/italia/health/onto/health-organisation/CommercialActivityType"/>
+        <rdfs:comment xml:lang="en">Large establishments are those with a sales area of more than 1,500 square metres for municipalities below 10,000 inhabitants, or more than 2,500 square metres for municipalities above 10,000 inhabitants.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Sono grandi strutture gli esercizi che hanno una superficie di vendita superiore ai 1.500 mq per i comuni al di sotto dei 10.000 abitanti, oppure superiore ai 2.500 mq per i comuni al di sopra dei 10.000 abitanti.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Grande Struttura di Vendita</rdfs:label>
+        <rdfs:label xml:lang="en">Large Establishment</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/MediumSizedEstablishment -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/health/onto/health-organisation/MediumSizedEstablishment">
+        <rdf:type rdf:resource="https://w3id.org/italia/health/onto/health-organisation/CommercialActivityType"/>
+        <rdfs:comment xml:lang="en">Medium-sized establishments are those with a sales area between 151 and 1,500 square metres for municipalities with under 10,000 inhabitants, or between 251 and 2,500 square metres for municipalities with over 10,000 inhabitants.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Sono medie strutture gli esercizi che hanno una superficie di vendita compresa fra i 151 e i 1500mq per i comuni al di sotto dei 10.000 abitanti, oppure fra i 251 e i 2500 mq per i comuni al di sopra dei 10.000 abitanti.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Media Struttura di Vendita</rdfs:label>
+        <rdfs:label xml:lang="en">Medium-Sized Establishment</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/italia/health/onto/health-organisation/NeighbourhoodEstablishment -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/health/onto/health-organisation/NeighbourhoodEstablishment">
+        <rdf:type rdf:resource="https://w3id.org/italia/health/onto/health-organisation/CommercialActivityType"/>
+        <rdfs:comment xml:lang="en">A neighbourhood outlet is a retail outlet with a sales area not exceeding 150 square metres in municipalities with a resident population of less than 10,000 inhabitants or 250 square metres in those with a population of more than 10,000 inhabitants.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un esercizio di vicinato è un punto vendita al dettaglio con superficie di vendita non superiore ai 150 mq nei comuni con popolazione residente inferiore a 10.000 abitanti oppure a 250 mq in quelli con popolazione superiore ai 10.000 abitanti.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/italia/health/onto/health-organisation"/>
+        <rdfs:label xml:lang="it">Esercizio di Vicinato</rdfs:label>
+        <rdfs:label xml:lang="en">Neighbourhood Establishment</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
