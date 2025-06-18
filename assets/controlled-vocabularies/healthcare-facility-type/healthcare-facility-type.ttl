@@ -1,0 +1,609 @@
+@prefix : <http://mapping.example.com/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/imec/idlab/function#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix ho: <https://w3id.org/italia/health/onto/health-organisation/> .
+@prefix mailto: <mailto:> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2000/01/XMLSchema#> .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type> a
+    dcatapit:Dataset, skos:ConceptScheme, adms:Asset, dcat:Dataset;
+  dc:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
+  dc:conformsTo <http://dati.gov.it/data/resource/Standard/SKOS>;
+  dc:creator <https://w3id.org/italia/health/data/private-organisation/13454210157>,
+    <https://w3id.org/italia/health/data/private-organisation/13866741005>, <https://w3id.org/italia/health/data/public-organisation/m_sa>;
+  dc:description "This is the controlled vocabulary of healthcare facility types. The controlled vocabulary is created starting from Ministry of Health's documentation."@en,
+    "Questo è il vocabolario controllato del tipo di strutture sanitarie, ricavato dalla documentazione del Ministero della Salute."@it;
+  dc:identifier <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  dc:issued "2025-06-05"^^xsd:date;
+  dc:language <http://publications.europa.eu/resource/authority/language/ITA>;
+  dc:modified "2025-06-16"^^xsd:date;
+  dc:publisher <https://w3id.org/italia/health/data/public-organisation/m_sa>;
+  dc:rightsHolder <https://w3id.org/italia/health/public-organisation/m_sa>;
+  dc:title "Healthcare Facility Type Controlled Vocabulary"@en, "Vocabolario controllato del tipo di strutture sanitarie"@it;
+  dc:type <http://purl.org/adms/assettype/Taxonomy>;
+  xkos:numberOfLevels "3";
+  rdfs:comment "This is the controlled vocabulary of healthcare facility types. The controlled vocabulary is created starting from Ministry of Health's documentation."@en,
+    "Questo è il vocabolario controllato del tipo di strutture sanitarie, ricavato dalla documentazione del Ministero della Salute."@it;
+  rdfs:isDefinedBy <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  rdfs:label "Healthcare Facility Type Controlled Vocabulary"@en, "Vocabolario controllato del tipo di strutture sanitarie"@it;
+  owl:versionInfo "Versione 1.0"@it;
+  skos:hasTopConcept <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
+  dcat:contactPoint <https://w3id.org/italia/health/data/contact-point/m_sa>;
+  dcat:distribution <https://w3id.org/italia/health/data/distribution/healthcareFacilityType-CSV>,
+    <https://w3id.org/italia/health/data/distribution/healthcareFacilityType-RDF-TURTLE>;
+  dcat:keyword "healthcare facility type"@en, "struttura sanitaria"@it;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
+  ndc:keyConcept "healthcare-facility-type" .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura di ricovero"@it;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a0>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a1>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a2>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a3>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a4>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a5>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a8>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a9>;
+  skos:notation "a";
+  skos:prefLabel "Struttura di ricovero"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a0>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Azienda Ospedaliera"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a01>;
+  skos:notation "0";
+  skos:prefLabel "Azienda Ospedaliera"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a01>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Azienda Ospedaliera"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a0>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "0.1";
+  skos:prefLabel "Azienda Ospedaliera"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a1>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ospedale a gestione diretta presidio della A.S.L."@it;
+  skos:altLabel "Ospedale a gestione diretta presidio della U.S.L."@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a11>;
+  skos:notation "1";
+  skos:prefLabel "Ospedale a gestione diretta presidio della A.S.L."@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a11>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ospedale a gestione diretta presidio della A.S.L."@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a1>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "1.1";
+  skos:prefLabel "Ospedale a gestione diretta presidio della A.S.L."@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a2>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Policlinico universitario"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a21>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a22>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a23>;
+  skos:notation "2";
+  skos:prefLabel "Policlinico universitario"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a21>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Azienda ospedaliera universitaria integrata con il servizio sanitario nazionale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a2>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "2.1";
+  skos:prefLabel "Azienda ospedaliera universitaria integrata con il servizio sanitario nazionale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a22>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Azienda ospedaliera integrata con l'università"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a2>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "2.2";
+  skos:prefLabel "Azienda ospedaliera integrata con l'università"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a23>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Policlinico universitario privato"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a2>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "2.3";
+  skos:prefLabel "Policlinico universitario privato"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a3>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "I.R.C.C.S."@it;
+  skos:altLabel "Istituto di Ricovero e Cura di Carattere Scientifico"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a31>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a32>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a33>;
+  skos:notation "3";
+  skos:prefLabel "I.R.C.C.S."@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a31>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "I.R.C.C.S. pubblico"@it;
+  skos:altLabel "Istituto di Ricovero e Cura di Carattere Scientifico pubblico"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a3>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "3.1";
+  skos:prefLabel "I.R.C.C.S. pubblico"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a32>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "I.R.C.C.S. privato"@it;
+  skos:altLabel "Istituto di Ricovero e Cura di Carattere Scientifico privato"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a3>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "3.2";
+  skos:prefLabel "I.R.C.C.S. privato"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a33>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "I.R.C.C.S. fondazione"@it;
+  skos:altLabel "Istituto di Ricovero e Cura di Carattere Scientifico fondazione"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a3>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "3.3";
+  skos:prefLabel "I.R.C.C.S. fondazione"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a4>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ospedale classificato o assimilato ai sensi dell'art.1, ultimo comma, L.132/68"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a41>;
+  skos:notation "4";
+  skos:prefLabel "Ospedale classificato o assimilato ai sensi dell'art.1, ultimo comma, L.132/68"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a41>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ospedale classificato o assimilato ai sensi dell'art.1, ultimo comma, L.132/68"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a4>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "4.1";
+  skos:prefLabel "Ospedale classificato o assimilato ai sensi dell'art.1, ultimo comma, L.132/68"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a5>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Casa di cura privata accreditata"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a51>;
+  skos:notation "5";
+  skos:prefLabel "Casa di cura privata accreditata"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a51>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Casa di cura privata accreditata"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a5>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "5.1";
+  skos:prefLabel "Casa di cura privata accreditata"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a8>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Istituto qualificato presidio della A.S.L."@it;
+  skos:altLabel "Istituto qualificato presidio della U.S.L."@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a81>;
+  skos:notation "8";
+  skos:prefLabel "Istituto qualificato presidio della A.S.L."@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a81>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Istituto qualificato presidio della A.S.L."@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a8>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "8.1";
+  skos:prefLabel "Istituto qualificato presidio della A.S.L."@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a9>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ente di ricerca"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a91>;
+  skos:notation "9";
+  skos:prefLabel "Ente di ricerca"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a91>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ente di ricerca"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/a9>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:notation "9.1";
+  skos:prefLabel "Ente di ricerca"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura sanitaria territoriale"@it;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b0>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b1>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b10>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b11>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b12>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b13>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b14>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b15>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b16>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b17>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b18>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b19>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b2>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b3>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b4>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b5>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b6>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b7>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b8>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b9>;
+  skos:notation "b";
+  skos:prefLabel "Struttura sanitaria territoriale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b0>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ambulatorio e Laboratorio"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b01>;
+  skos:prefLabel "Ambulatorio e Laboratorio"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b01>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ambulatorio specialistico"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b0>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Ambulatorio specialistico"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b1>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ambulatorio e Laboratorio"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b11>;
+  skos:prefLabel "Ambulatorio e Laboratorio"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b10>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Altro tipo di struttura territoriale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b101>;
+  skos:prefLabel "Altro tipo di struttura territoriale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b101>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Centro dialisi"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b10>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Centro dialisi"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b11>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Altro tipo di struttura territoriale"@it, "Laboratorio"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>,
+    <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b1>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b111>;
+  skos:prefLabel "Altro tipo di struttura territoriale"@it, "Laboratorio"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b111>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Centro assistenza HIV"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b11>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Centro assistenza HIV"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b12>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Altro tipo di struttura territoriale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b121>;
+  skos:prefLabel "Altro tipo di struttura territoriale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b121>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Centro Salute Mentale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b12>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Centro Salute Mentale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b13>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Altro tipo di struttura territoriale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b131>;
+  skos:prefLabel "Altro tipo di struttura territoriale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b131>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Consultorio familiare"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b13>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Consultorio familiare"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b14>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Altro tipo di struttura territoriale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b141>;
+  skos:prefLabel "Altro tipo di struttura territoriale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b141>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Assistenza termale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b14>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Assistenza termale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b15>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Altro tipo di struttura territoriale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b151>;
+  skos:prefLabel "Altro tipo di struttura territoriale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b151>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ser.D"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b15>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Ser.D"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b16>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura residenziale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b161>;
+  skos:prefLabel "Struttura residenziale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b161>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Ospedali di Comunità"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b16>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Ospedali di Comunità"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b17>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Casa della Comunità"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b171>;
+  skos:prefLabel "Casa della Comunità"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b171>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Case della Comunità"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b17>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Case della Comunità"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b18>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Altro tipo di struttura territoriale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b181>;
+  skos:prefLabel "Altro tipo di struttura territoriale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b181>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Centrali Operative Territoriali"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b18>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Centrali Operative Territoriali"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b19>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura residenziale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b191>;
+  skos:prefLabel "Struttura residenziale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b191>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Residenza per l'esecuzione delle misure di sicurezza"@it;
+  skos:altLabel "R.E.M.S."@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b19>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Residenza per l'esecuzione delle misure di sicurezza"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b2>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura residenziale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b21>;
+  skos:prefLabel "Struttura residenziale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b21>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Rsa per anziani"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b2>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Rsa per anziani"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b3>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura residenziale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b31>;
+  skos:prefLabel "Struttura residenziale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b31>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Rsa per disabili fisici"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b3>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Rsa per disabili fisici"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b4>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura residenziale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b41>;
+  skos:prefLabel "Struttura residenziale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b41>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Rsa per disabili psichici"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b4>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Rsa per disabili psichici"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b5>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura residenziale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b51>;
+  skos:prefLabel "Struttura residenziale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b51>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Comunità terapeutica-riabilitativa area salute mentale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b5>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Comunità terapeutica-riabilitativa area salute mentale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b6>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura residenziale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b61>;
+  skos:prefLabel "Struttura residenziale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b61>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Comunità terapeutica-riabilitativa area dipendenze patologiche"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b6>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Comunità terapeutica-riabilitativa area dipendenze patologiche"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b7>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura residenziale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b71>;
+  skos:prefLabel "Struttura residenziale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b71>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Centro residenziale di cure palliative"@it;
+  skos:altLabel "Hospice"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b7>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Centro residenziale di cure palliative"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b8>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura semiresidenziale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b81>;
+  skos:prefLabel "Struttura semiresidenziale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b81>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Day Hospice"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b8>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Day Hospice"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b9>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Struttura semiresidenziale"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b91>;
+  skos:prefLabel "Struttura semiresidenziale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b91>
+  a skos:Concept, ho:HealthcareFacilityType;
+  rdfs:label "Centro diurno"@it;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type/b9>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/healthcare-facility-type>;
+  skos:prefLabel "Centro diurno"@it .
+
+<https://w3id.org/italia/health/data/contact-point/m_sa> a dcatapit:Organization,
+    vcard:Kind, vcard:Organization;
+  vcard:fn "Ex Direzione generale della digitalizzazione, del sistema informativo sanitario e della statistica"@it;
+  vcard:hasEmail "mailto:direzionesistemainformativo@sanita.it"^^xsd:anyURI .
+
+<https://w3id.org/italia/health/data/distribution/healthcareFacilityType-CSV> a dcatapit:Distribution,
+    dcat:Distribution;
+  dc:description "This is the distribution in CSV of the Linked Open Dataset of the Ministry of Health's classification on the healthcare facility type"@en,
+    "Questa è la distribuzione CSV del dataset Linked Open Data della classificazione del Ministero della Salute delle tipologie di struttura sanitaria"@it;
+  dc:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dc:title "CSV distribution of healthcare facility type"@en, "Distribuzione CSV tipologie delle strutture sanitarie"@it;
+  dcat:accessURL <https://github.com/ministero-salute/it-data-semantics/tree/main/assets/controlled-vocabularies/healthcare-facility-type>;
+  dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-data-semantics/refs/heads/main/assets/controlled-vocabularies/healthcare-facility-type/healthcare-facility-type.csv> .
+
+<https://w3id.org/italia/health/data/distribution/healthcareFacilityType-RDF-TURTLE>
+  a dcatapit:Distribution, dcat:Distribution;
+  dc:description "This is the distribution in RDF/turtle of the Linked Open Dataset of the Ministry of Health's classification on the healthcare facility type"@en,
+    "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data della classificazione del Ministero della Salute delle tipologie di struttura sanitaria"@it;
+  dc:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dc:title "RDF/Turtle distribution of healthcare facility type"@en, "Distribuzione RDF/Turtle tipologie di struttura sanitaria"@it;
+  dcat:accessURL <https://github.com/ministero-salute/it-data-semantics/tree/main/assets/controlled-vocabularies/healthcare-facility-type>;
+  dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-data-semantics/refs/heads/main/assets/controlled-vocabularies/healthcare-facility-type/healthcare-facility-type.ttl> .
+
+<https://w3id.org/italia/health/data/private-organisation/13454210157> a dcatapit:Agent,
+    foaf:Agent;
+  dc:identifier "13454210157";
+  foaf:name "Accenture Italy"@en, "Accenture Italia"@it .
+
+<https://w3id.org/italia/health/data/private-organisation/13866741005> a dcatapit:Agent,
+    foaf:Agent;
+  dc:identifier "13866741005";
+  foaf:name "BUP"@en, "BUP srl"@it .
+
+<https://w3id.org/italia/health/data/public-organisation/m_sa> a dcatapit:Agent, foaf:Agent;
+  dc:identifier "m_sa";
+  foaf:name "Ministry of Health of Italy"@en, "Ministero della Salute"@it .

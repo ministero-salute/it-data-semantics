@@ -1,0 +1,184 @@
+@prefix : <http://mapping.example.com/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+@prefix fno: <https://w3id.org/imec/idlab/function#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix ho: <https://w3id.org/italia/health/onto/health-organisation/> .
+@prefix mailto: <mailto:> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2000/01/XMLSchema#> .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type> a dcatapit:Dataset,
+    skos:ConceptScheme, adms:Asset, dcat:Dataset;
+  dc:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
+  dc:conformsTo <http://dati.gov.it/data/resource/Standard/SKOS>;
+  dc:creator <https://w3id.org/italia/health/data/private-organisation/13454210157>,
+    <https://w3id.org/italia/health/data/private-organisation/13866741005>, <https://w3id.org/italia/health/data/public-organisation/m_sa>;
+  dc:description "This is the controlled vocabulary of logistic site types. The controlled vocabulary is created starting from Ministry of Health's documentation."@en,
+    "Questo è il vocabolario controllato delle tipologie di sito logistico per la tracciabilità del farmaco. Il vocabolario controllato è ricavato dai documenti del Ministero della Salute."@it;
+  dc:identifier <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  dc:issued "2025-06-05"^^xsd:date;
+  dc:language <http://publications.europa.eu/resource/authority/language/ITA>;
+  dc:modified "2025-06-16"^^xsd:date;
+  dc:publisher <https://w3id.org/italia/health/data/public-organisation/m_sa>;
+  dc:rightsHolder <https://w3id.org/italia/health/public-organisation/m_sa>;
+  dc:title "Logistic Site Type Controlled Vocabulary"@en, "Vocabolario controllato delle tipologie di sito logistico"@it;
+  dc:type <http://purl.org/adms/assettype/Taxonomy>;
+  xkos:numberOfLevels "2";
+  rdfs:comment "This is the controlled vocabulary of logistic site types. The controlled vocabulary is created starting from Ministry of Health's documentation."@en,
+    "Questo è il vocabolario controllato delle tipologie di sito logistico per la tracciabilità del farmaco. Il vocabolario controllato è ricavato dai documenti del Ministero della Salute."@it;
+  rdfs:isDefinedBy <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  rdfs:label "Logistic Site Type Controlled Vocabulary"@en, "Vocabolario controllato delle tipologie di sito logistico."@it;
+  owl:versionInfo "Versione 1.0"@it;
+  skos:hasTopConcept <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/c>,
+    <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/d>, <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/g>,
+    <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/p>, <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/s>;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
+  dcat:contactPoint <https://w3id.org/italia/health/data/contact-point/m_sa>;
+  dcat:distribution <https://w3id.org/italia/health/data/distribution/logisticSiteType-CSV>,
+    <https://w3id.org/italia/health/data/distribution/logisticSiteType-RDF-TURTLE>;
+  dcat:keyword "logistic site"@en, "sito logistico"@it;
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL>;
+  ndc:keyConcept "logistic-site-type" .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/c> a skos:Concept,
+    ho:LogisticSitetype;
+  rdfs:label "Esercizio commerciale"@it;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/cc1>,
+    <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/cc2>, <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/cc3>;
+  skos:notation "c";
+  skos:prefLabel "Esercizio commerciale"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/cc1> a skos:Concept,
+    ho:LogisticSitetype;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/c>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:notation "cc1";
+  skos:prefLabel "Esercizio di vicinato"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/cc2> a skos:Concept,
+    ho:LogisticSitetype;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/c>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:notation "cc2";
+  skos:prefLabel "Media struttura di vendita"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/cc3> a skos:Concept,
+    ho:LogisticSitetype;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/c>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:notation "cc3";
+  skos:prefLabel "Grande struttura di vendita"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/d> a skos:Concept,
+    ho:LogisticSitetype;
+  rdfs:label "Depositario"@it;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/dd>;
+  skos:notation "d";
+  skos:prefLabel "Depositario"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/dd> a skos:Concept,
+    ho:LogisticSitetype;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/d>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:notation "dd";
+  skos:prefLabel "Depositario"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/g> a skos:Concept,
+    ho:LogisticSitetype;
+  rdfs:label "Grossista"@it;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/gd>;
+  skos:notation "g";
+  skos:prefLabel "Grossista"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/gd> a skos:Concept,
+    ho:LogisticSitetype;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/g>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:notation "gd";
+  skos:prefLabel "Grossista e Depositario"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/p> a skos:Concept,
+    ho:LogisticSitetype;
+  rdfs:label "Produttore"@it;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/pp>;
+  skos:notation "p";
+  skos:prefLabel "Produttore"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/pp> a skos:Concept,
+    ho:LogisticSitetype;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/p>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:notation "pp";
+  skos:prefLabel "Produttore"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/s> a skos:Concept,
+    ho:LogisticSitetype;
+  rdfs:label "Smaltimento"@it;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:narrower <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/ss>;
+  skos:notation "s";
+  skos:prefLabel "Smaltimento"@it .
+
+<https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/ss> a skos:Concept,
+    ho:LogisticSitetype;
+  skos:broader <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type/s>;
+  skos:inScheme <https://w3id.org/italia/health/controlled-vocabulary/logistic-site-type>;
+  skos:notation "ss";
+  skos:prefLabel "Smaltimento"@it .
+
+<https://w3id.org/italia/health/data/contact-point/m_sa> a dcatapit:Organization,
+    vcard:Kind, vcard:Organization;
+  vcard:fn "Ex Direzione generale della digitalizzazione, del sistema informativo sanitario e della statistica"@it;
+  vcard:hasEmail "mailto:direzionesistemainformativo@sanita.it"^^xsd:anyURI .
+
+<https://w3id.org/italia/health/data/distribution/logisticSiteType-CSV> a dcatapit:Distribution,
+    dcat:Distribution;
+  dc:description "This is the distribution in CSV of the Linked Open Dataset of the Ministry of Health's classification on the logistic site type"@en,
+    "Questa è la distribuzione CSV del dataset Linked Open Data della classificazione del Ministero della Salute delle tipologie di sito logistico per la tracciabilità del farmaco"@it;
+  dc:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dc:title "CSV distribution of logistic site type"@en, "Distribuzione CSV tipologie di stio logistico"@it;
+  dcat:accessURL <https://github.com/ministero-salute/it-data-semantics/tree/main/assets/controlled-vocabularies/logistic-site-type>;
+  dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-data-semantics/refs/heads/master/assets/controlled-vocabularies/logistic-site-type/logistic-site-type.csv> .
+
+<https://w3id.org/italia/health/data/distribution/logisticSiteType-RDF-TURTLE> a dcatapit:Distribution,
+    dcat:Distribution;
+  dc:description "This is the distribution in RDF/turtle of the Linked Open Dataset of the Ministry of Health's classification on the logistic site type"@en,
+    "Questa è la distribuzione RDF/Turtle del dataset Linked Open Data della classificazione del Ministero della Salute delle tipologie di sito logistico per la tracciabilità del farmaco"@it;
+  dc:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dc:title "RDF/Turtle distribution of logistic site type"@en, "Distribuzione RDF/Turtle tipologie di sito logistico"@it;
+  dcat:accessURL <https://github.com/ministero-salute/it-data-semantics/tree/main/assets/controlled-vocabularies/logistic-site-type>;
+  dcat:downloadURL <https://raw.githubusercontent.com/ministero-salute/it-data-semantics/refs/heads/master/assets/controlled-vocabularies/logistic-site-type/logistic-site-type.ttl> .
+
+<https://w3id.org/italia/health/data/private-organisation/13454210157> a dcatapit:Agent,
+    foaf:Agent;
+  dc:identifier "13454210157";
+  foaf:name "Accenture Italy"@en, "Accenture Italia"@it .
+
+<https://w3id.org/italia/health/data/private-organisation/13866741005> a dcatapit:Agent,
+    foaf:Agent;
+  dc:identifier "13866741005";
+  foaf:name "BUP"@en, "BUP srl"@it .
+
+<https://w3id.org/italia/health/data/public-organisation/m_sa> a dcatapit:Agent, foaf:Agent;
+  dc:identifier "m_sa";
+  foaf:name "Ministry of Health of Italy"@en, "Ministero della Salute"@it .

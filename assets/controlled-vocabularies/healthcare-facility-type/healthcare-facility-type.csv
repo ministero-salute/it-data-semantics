@@ -1,0 +1,33 @@
+﻿codice_1_liv_unofficial,label_1_liv_unofficial,codice_2_liv_uri,codice_2_liv_official_MdS,label_2_liv_official_MdS,alt_label_2_liv_official_MdS,codice_3_liv_uri,codice_3_liv_official_MdS,label_3_liv_official_MdS,alt_label_3_liv_official_MdS
+a,Struttura di ricovero,a0,0,Azienda Ospedaliera,,a01,0.1,Azienda Ospedaliera,
+a,Struttura di ricovero,a1,1,Ospedale a gestione diretta presidio della A.S.L.,Ospedale a gestione diretta presidio della U.S.L.,a11,1.1,Ospedale a gestione diretta presidio della A.S.L.,
+a,Struttura di ricovero,a2,2,Policlinico universitario,,a21,2.1,Azienda ospedaliera universitaria integrata con il servizio sanitario nazionale,
+a,Struttura di ricovero,a2,2,Policlinico universitario,,a22,2.2,Azienda ospedaliera integrata con l'università,
+a,Struttura di ricovero,a2,2,Policlinico universitario,,a23,2.3,Policlinico universitario privato,
+a,Struttura di ricovero,a3,3,I.R.C.C.S.,Istituto di Ricovero e Cura di Carattere Scientifico,a31,3.1,I.R.C.C.S. pubblico,Istituto di Ricovero e Cura di Carattere Scientifico pubblico
+a,Struttura di ricovero,a3,3,I.R.C.C.S.,Istituto di Ricovero e Cura di Carattere Scientifico,a32,3.2,I.R.C.C.S. privato,Istituto di Ricovero e Cura di Carattere Scientifico privato
+a,Struttura di ricovero,a3,3,I.R.C.C.S.,Istituto di Ricovero e Cura di Carattere Scientifico,a33,3.3,I.R.C.C.S. fondazione,Istituto di Ricovero e Cura di Carattere Scientifico fondazione
+a,Struttura di ricovero,a4,4,"Ospedale classificato o assimilato ai sensi dell'art.1, ultimo comma, L.132/68",,a41,4.1,"Ospedale classificato o assimilato ai sensi dell'art.1, ultimo comma, L.132/68",
+a,Struttura di ricovero,a5,5,Casa di cura privata accreditata,,a51,5.1,Casa di cura privata accreditata,
+a,Struttura di ricovero,a8,8,Istituto qualificato presidio della A.S.L.,Istituto qualificato presidio della U.S.L.,a81,8.1,Istituto qualificato presidio della A.S.L.,
+a,Struttura di ricovero,a9,9,Ente di ricerca,,a91,9.1,Ente di ricerca,
+b,Struttura sanitaria territoriale,b0,,Ambulatorio e Laboratorio,,b01,,Ambulatorio specialistico,
+b,Struttura sanitaria territoriale,b1,,Ambulatorio e Laboratorio,,b11,,Laboratorio,
+b,Struttura sanitaria territoriale,b2,,Struttura residenziale,,b21,,Rsa per anziani,
+b,Struttura sanitaria territoriale,b3,,Struttura residenziale,,b31,,Rsa per disabili fisici,
+b,Struttura sanitaria territoriale,b4,,Struttura residenziale,,b41,,Rsa per disabili psichici,
+b,Struttura sanitaria territoriale,b5,,Struttura residenziale,,b51,,Comunità terapeutica-riabilitativa area salute mentale,
+b,Struttura sanitaria territoriale,b6,,Struttura residenziale,,b61,,Comunità terapeutica-riabilitativa area dipendenze patologiche,
+b,Struttura sanitaria territoriale,b7,,Struttura residenziale,,b71,,Centro residenziale di cure palliative,Hospice
+b,Struttura sanitaria territoriale,b8,,Struttura semiresidenziale,,b81,,Day Hospice,
+b,Struttura sanitaria territoriale,b9,,Struttura semiresidenziale,,b91,,Centro diurno,
+b,Struttura sanitaria territoriale,b10,,Altro tipo di struttura territoriale,,b101,,Centro dialisi,
+b,Struttura sanitaria territoriale,b11,,Altro tipo di struttura territoriale,,b111,,Centro assistenza HIV,
+b,Struttura sanitaria territoriale,b12,,Altro tipo di struttura territoriale,,b121,,Centro Salute Mentale,
+b,Struttura sanitaria territoriale,b13,,Altro tipo di struttura territoriale,,b131,,Consultorio familiare,
+b,Struttura sanitaria territoriale,b14,,Altro tipo di struttura territoriale,,b141,,Assistenza termale,
+b,Struttura sanitaria territoriale,b15,,Altro tipo di struttura territoriale,,b151,,Ser.D,
+b,Struttura sanitaria territoriale,b16,,Struttura residenziale,,b161,,Ospedali di Comunità,
+b,Struttura sanitaria territoriale,b17,,Casa della Comunità,,b171,,Case della Comunità,
+b,Struttura sanitaria territoriale,b18,,Altro tipo di struttura territoriale,,b181,,Centrali Operative Territoriali,
+b,Struttura sanitaria territoriale,b19,,Struttura residenziale,,b191,,Residenza per l'esecuzione delle misure di sicurezza,R.E.M.S.
